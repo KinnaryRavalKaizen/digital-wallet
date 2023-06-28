@@ -1,13 +1,16 @@
 [tool.poetry]
-name = "digital-wallet"
+name = "digital_wallet"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Dawid K. and Kinnary R."]
 readme = "README.md"
-packages = [{include = "digital_wallet"}]
+packages = [
+    {include="digital_wallet", from="src"}
+]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
+pytest = "^7.4.0"
 
 
 [build-system]
